@@ -1,0 +1,77 @@
+title: RhythmSuccess
+tags: 
+colorID: 0
+position: 802,-326
+---
+<<set $AndrewSignature to true>>
+<< setsprite Portrait AndrewTalk1>> 
+Enjoyed the show?
+<< setsprite Portrait DimitriThumbsUp>> 
+Hell yeah that was amazing!
+<< setsprite Portrait DimitriTalk1>> 
+(Wait... do they have the rights to that song?)
+<< setsprite Portrait StellaTalk1>> 
+Yes! Really cool show!
+<< setsprite Portrait DonavanTalk1>> 
+Thank you!
+<< setsprite Portrait DimitriSmile1>>
+Andrew, we have a paper that allows you to get 83k bucks from daddy Tony? You're in?
+<< setsprite Portrait AndrewTalk1>> 
+Absolutely! I'm gonna be able to pay off my gambling debts!
+<< setsprite Portrait DonavanTalk1>> 
+Or new equipment... Andrew...
+Anyway, come back anytime for an encore!
+<< setsprite Portrait DimitriSmile1>>
+We sure will!
+===
+title: Andrew
+tags: 
+colorID: 0
+position: 798,-636
+---
+<<if visited("Andrew") is false>>
+[[ AndrewFirst]]
+<< else>> 
+[[ AttemptRhythm]]
+<<endif>>
+===
+title: AndrewFirst
+tags: 
+colorID: 0
+position: 509,-641
+---
+<<setsprite Portrait StellaTalk1>>
+Andrew is part of a group and they're doing a show here!
+<<setsprite Portrait DimitriTalk2>>
+We should probably find them before they start playing...
+<<setsprite Portrait StellaTalk1>>
+Too late! The show is starting!! Look at that!
+<<startminigame Master Rhythm>>
+===
+title: AttemptRhythm
+tags: 
+colorID: 0
+position: 516,-389
+---
+<< setsprite Portrait DonavanTalk1>> 
+Ready for an encore?
+[[ Hell yeah! |StartRhythm]]
+[[ Maybe later |AndrewNormal]]
+===
+title: StartRhythm
+tags: 
+colorID: 0
+position: 225,-312
+---
+<<startminigame Master Rhythm>>
+===
+title: AndrewNormal
+tags: 
+colorID: 0
+position: 434,-138
+---
+<<setsprite Portrait StellaTalk1>>
+Maybe later!
+<<setsprite Portrait AndrewTalk1>>
+Alright!
+===

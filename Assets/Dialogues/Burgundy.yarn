@@ -1,0 +1,110 @@
+title: Burgundy
+tags: 
+colorID: 0
+position: -3,-282
+---
+<<if visited("Burgundy") is false>>
+[[ BurgundyFirst]]
+<< elseif visited("Burgundy") is true and $BurgundySignature is false>> 
+[[ AttemptSorter]]
+<<else>>
+[[ BurgundyNormal ]]
+<<endif>>
+===
+title: BurgundyFirst
+tags: 
+colorID: 0
+position: 32,-647
+---
+<<setsprite Portrait BurgundySmile>>
+Hello! I'm Burgundy and here's my sister Lucina!
+<<setsprite Portrait LucinaTalk1>>
+Hi.
+<<setsprite Portrait DimitriTalk4>>
+Hello. Our father needs your signature so you can get a part of his fortune.
+<<setsprite Portrait BurgundySmile>>
+Easy money? Hell yeah! I can buy more purses!
+<<setsprite Portrait StellaSurprise>>
+More purses? How many do you have?!
+<<setsprite Portrait BurgundyTalk2>>
+Like 7? I've got to keep with the trends!
+<<setsprite Portrait DimitriTalk1>>
+Isn't it too much?
+<<setsprite Portrait BurgundyTalk1>>
+Eh it's just a purse! My sister is probably gonna get a surgery for her "asymmetrical" face.
+<<setsprite Portrait LucinaStern>>
+You don't understand. My manager wants me to be pristine.
+<<setsprite Portrait DimitriTalk2>>
+Well that's just insane! You need to accept yourself as who you are and ignore the fashion industry's influence!
+<<setsprite Portrait LucinaTalk1>>
+I guess you're right. I'm gonna start by getting rid of my beauty magazines.
+<<setsprite Portrait BurgundyTalk2>>
+Well I guess I can make some effort to change too. I'm gonna give away some of my purses.
+<<setsprite Portrait DimitriTalk3>>
+Good idea! Let us help you sorting your stuff!
+<<setsprite Portrait StellaTalk2>>
+We already sealed the signature. We could just leave...?
+<<setsprite Portrait DimitriTalk4>>
+They're helping us, we're helping them!
+<<startminigame Master Sorting>>
+===
+title: BurgundyNormal
+tags: 
+colorID: 0
+position: 375,-235
+---
+<<setsprite Portrait BurgundySmile>>
+HI I'M BURGUNDY!!!!
+<<setsprite Portrait DimitriWorried>>
+Hiii....
+===
+title: AttemptSorter
+tags: 
+colorID: 0
+position: 396,-670
+---
+<<setsprite Portrait DimitriThumbsUp>>
+Alright. Let's sort this stuff!
+<<setsprite Portrait BurgundySmile>>
+Yay!
+<<startminigame Master Sorting>>
+===
+title: SortingFailed
+tags: 
+colorID: 0
+position: 780,-429
+---
+<< setsprite Portrait DimitriWorried>> 
+Oh boy... what a mess...
+<< setsprite Portrait LucinaTalk1>>
+Indeed...
+<< setsprite Portrait StellaTalk2>> 
+Yeah we should fix the mess we made...
+[[Let's sort this mess |AttemptSorter]]
+[[Maybe later |BurgundyLater]]
+===
+title: BurgundyLater
+tags: 
+colorID: 0
+position: 823,-743
+---
+<<setsprite Portrait DimitriTalk1>>
+We'll come back later.
+<<setsprite Portrait BurgundyTalk2>>
+Alright!
+===
+title: SortingSuccess
+tags: 
+colorID: 0
+position: 770,-195
+---
+<<set $BurgundySignature to true>>
+<<setsprite Portrait BurgundySmile>>
+YAY! Look at that! Everything is ready to be given to the poor.
+<<setsprite Portrait LucinaTalk1>>
+Thank you. I am joyful.
+<<setsprite Portrait DimitriTalk3>>
+You're welcomed!
+<<setsprite Portrait StellaTalk1>>
+Alright let's get going!
+===

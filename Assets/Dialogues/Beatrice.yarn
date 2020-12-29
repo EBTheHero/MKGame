@@ -1,0 +1,49 @@
+title: Beatrice
+tags: 
+colorID: 0
+position: 729,-364
+---
+<<if visited("Beatrice") is false>>
+[[ BeatriceFirst]]
+<<else>>
+[[ BeatriceNormal]]
+<<endif>>
+===
+title: BeatriceFirst
+tags: 
+colorID: 0
+position: 756,-605
+---
+<<set $BeatriceSignature to true>>
+<<setsprite Portrait DimitriSmile1>>
+Hello!
+<<setsprite Portrait BeatriceTalk1>>
+Hi...
+<<setsprite Portrait DimitriTalk1>>
+Wanna sign this paper and get money?
+<<setsprite Portrait BeatriceTalk1>>
+Sure...
+<<setsprite Portrait StellaTalk2>>
+Well that was easy...
+<<setsprite Portrait BeatriceTalk1>>
+Hey... wanna be my friends?
+<<setsprite Portrait StellaTalk2>>
+I mean... we're kinda-
+<<setsprite Portrait DimitriSmile1>>
+YES! We will be your friends now that you helped me!
+<<setsprite Portrait BeatriceTalk1>>
+Yay!
+===
+title: BeatriceNormal
+tags: 
+colorID: 0
+position: 1069,-584
+---
+<<setsprite Portrait BeatriceTalk1>>
+Hi friends!
+<<setsprite Portrait DimitriSmile1>>
+Hello!
+*insert here friend friendship friendly conversation*
+<<setsprite Portrait DimitriTalk1>>
+Ok bye!!
+===

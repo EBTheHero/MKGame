@@ -1,0 +1,57 @@
+title: RiverleyFirst
+tags: 
+colorID: 0
+position: 176,-348
+---
+<<setsprite Portrait DimitriSmile1>>
+Hello! Having a good time?
+<<setsprite Portrait HackermanTalk1>>
+Yeah we're enjoying ourselves in the forest!
+<<setsprite Portrait RiverleyTalk1>>
+Together :)
+<<setsprite Portrait StellaTalk1>>
+That's so sweet!
+<<setsprite Portrait StellaTalk3>>
+But I do have a strange feeling that we know each other...
+<<setsprite Portrait RiverleyTalk1>>
+That's possible... We might be related...
+<<setsprite Portrait DimitriTalk2>>
+I swear I know you guys... I just don't know why...
+<<setsprite Portrait RiverleyTalk1>>
+I do know you a lot, Dimitri...
+<<setsprite Portrait DimitriTalk2>>
+(How the hell do they know my name)
+<<setsprite Portrait HackermanTalk1>>
+Come on Riverley, we don't want to get too meta don't we? Hehehe
+<<setsprite Portrait StellaSurprise>>
+Meta? The hell are you talking about?
+<<setsprite Portrait HackermanTalk1>>
+*waves hand* Be on your way. We want some privacy *winks*
+<<setsprite Portrait DimitriTalk4>>
+We will be on our way. You guys probably want some privacy.
+<<setsprite Portrait HackermanTalk1>>
+Hehehe
+<<setsprite Portrait RiverleyTalk1>>
+You silly boy with your magic tricks :)
+===
+title: Riverley
+tags: 
+colorID: 0
+position: 136,-80
+---
+<<if visited("Riverley") is false>>
+[[ RiverleyFirst]]
+<<else>>
+[[ RiverleyNormal]]
+<<endif>>
+===
+title: RiverleyNormal
+tags: 
+colorID: 0
+position: 476,-300
+---
+<<setsprite Portrait RiverleyTalk1>>
+*kisses*
+<<setsprite Portrait HackermanTalk1>>
+*smooches*
+===

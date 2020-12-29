@@ -1,0 +1,54 @@
+title: Edwin
+tags: 
+colorID: 0
+position: 760,-256
+---
+<<if visited("Edwin") is false>>
+[[ EdwinFirst]]
+<<else>>
+[[ EdwinNormal]]
+<<endif>>
+===
+title: EdwinFirst
+tags: 
+colorID: 0
+position: 756,-605
+---
+<<set $EdwinSignature to true>>
+<<setsprite Portrait DimitriSmile1>>
+Hello!
+<<setsprite Portrait EdwinTalk1>>
+What do you want?
+<<setsprite Portrait StellaTalk1>>
+Sign this paper and you'll get some of dad's money!
+<<setsprite Portrait EdwinTalk1>>
+No.
+<<setsprite Portrait StellaTalk3>>
+Please?
+<<setsprite Portrait EdwinTalk1>>
+No.
+<<setsprite Portrait StellaTalk2>>
+Please?
+<<setsprite Portrait EdwinTalk1>>
+No.
+<<setsprite Portrait StellaSurprise>>
+But I said please! Twice!
+<<setsprite Portrait EdwinTalk1>>
+Fine.
+<<setsprite Portrait StellaSmile1>>
+YESSSS!
+<<setsprite Portrait EdwinTalk1>>
+Now get out.
+<<setsprite Portrait DimitriTalk1>>
+Okay. Sorry...
+===
+title: EdwinNormal
+tags: 
+colorID: 0
+position: 1067,-584
+---
+<<setsprite Portrait EdwinTalk1>>
+I said get out!
+<<setsprite Portrait DimitriWorried>>
+Geez! Am I not allowed to say hi?!
+===

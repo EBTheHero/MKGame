@@ -1,0 +1,33 @@
+fileFormatVersion: 2
+guid: 82277d6935c210841ae66ef298ce967a
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: en-CA
+  stringIDs:
+  - Artemis-StampSuccess-0
+  - Artemis-StampSuccess-1
+  - Artemis-StampSuccess-2
+  - Artemis-StampFailed-3
+  - Artemis-StampFailed-4
+  - Artemis-ArtemisFirst-5
+  - Artemis-ArtemisFirst-6
+  - Artemis-ArtemisFirst-7
+  - Artemis-ArtemisFirst-8
+  - Artemis-ArtemisFirst-9
+  - Artemis-ArtemisFirst-10
+  - Artemis-AttemptStamp-11
+  - Artemis-AttemptStamp-12
+  - Artemis-ArtemisNormal-13
+  - Artemis-ArtemisNormal-14
+  - Artemis-ArtemisNormal-15
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {fileID: 7128917941130120860, guid: 82277d6935c210841ae66ef298ce967a, type: 3}
+  localizations: []

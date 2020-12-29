@@ -1,0 +1,44 @@
+title: Nicolas
+tags: 
+colorID: 0
+position: 732,-343
+---
+<<if visited("Nicolas") is false>>
+[[ NicolasFirst]]
+<<else>>
+[[ NicolasNormal]]
+<<endif>>
+===
+title: NicolasFirst
+tags: 
+colorID: 0
+position: 756,-605
+---
+<<set $NicolasSignature to true>>
+<<setsprite Portrait DimitriSmile1>>
+Hello!
+<<setsprite Portrait NicolasTalk1>>
+Hi!
+<<setsprite Portrait StellaTalk2>>
+Please sign this proof of delivery for your Amazon package
+<<setsprite Portrait NicolasTalk1>>
+Ok sure. I don't remember ordering anything
+<<setsprite Portrait StellaTalk2>>
+Thanks ok bye!
+<<setsprite Portrait DimitriSmile1>>
+Damn that was hella clever!
+<<setsprite Portrait StellaBlush>>
+Thanks hehe.
+===
+title: NicolasNormal
+tags: 
+colorID: 0
+position: 1069,-584
+---
+<<setsprite Portrait NicolasTalk1>>
+Are you stalking me?!
+<<setsprite Portrait DimitriTalk2>>
+No we're not!
+<<setsprite Portrait DimitriTalk1>>
+(except for last week hehe)
+===

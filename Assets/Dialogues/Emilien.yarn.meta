@@ -1,0 +1,49 @@
+fileFormatVersion: 2
+guid: c565e1c87cd2c47429387d4868be62fc
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: 
+  stringIDs:
+  - Emilien-BurgundyFirst-0
+  - Emilien-BurgundyFirst-1
+  - Emilien-BurgundyFirst-2
+  - Emilien-BurgundyFirst-3
+  - Emilien-BurgundyFirst-4
+  - Emilien-BurgundyFirst-5
+  - Emilien-BurgundyFirst-6
+  - Emilien-BurgundyFirst-7
+  - Emilien-BurgundyFirst-8
+  - Emilien-BurgundyFirst-9
+  - Emilien-BurgundyFirst-10
+  - Emilien-BurgundyFirst-11
+  - Emilien-BurgundyFirst-12
+  - Emilien-BurgundyFirst-13
+  - Emilien-BurgundyFirst-14
+  - Emilien-BurgundyNormal-15
+  - Emilien-BurgundyNormal-16
+  - Emilien-AttemptSorter-17
+  - Emilien-AttemptSorter-18
+  - Emilien-SortingFailed-19
+  - Emilien-SortingFailed-20
+  - Emilien-SortingFailed-21
+  - Emilien-SortingFailed-22
+  - Emilien-SortingFailed-23
+  - Emilien-BurgundyLater-24
+  - Emilien-BurgundyLater-25
+  - Emilien-SortingSuccess-26
+  - Emilien-SortingSuccess-27
+  - Emilien-SortingSuccess-28
+  - Emilien-SortingSuccess-29
+  - Emilien-EmilienFirst-30
+  - Emilien-EmilienNormal-31
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {instanceID: 0}
+  localizations: []

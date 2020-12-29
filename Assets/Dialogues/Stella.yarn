@@ -1,0 +1,139 @@
+title: Stella
+tags: 
+colorID: 1
+position: 799,-373
+---
+<<if visited("Stella") is false>>
+[[ FirstMeeting]]
+<<else>>
+[[ Help]]
+<<endif>>
+===
+title: Node_2
+tags: 
+colorID: 0
+position: 226,284
+---
+Your call
+<< setFollowPlayer Stella true>>
+===
+title: Node_3
+tags: 
+colorID: 0
+position: 548,166
+---
+Fine ill stop!!
+<< setFollowPlayer Stella false>>
+===
+title: FirstMeeting
+tags: 
+colorID: 0
+position: 693,-97
+---
+<<setsprite Portrait DimitriTalk3>>
+Hey!
+<<setsprite Portrait StellaTalk2>>
+Hi.
+<<setsprite Portrait DimitriTalk3>>
+...
+<<setsprite Portrait StellaSmile1>>
+.......
+<<setsprite Portrait StellaTalk2>>
+So what's ya here for?
+<<setsprite Portrait DimitriTalk4>>
+Well Father Tony wants me to go around get signatures of all of our siblings.
+<<setsprite Portrait StellaTalk3>>
+Does it involve money?
+<<setsprite Portrait DimitriThumbsUp>>
+Yep.
+<<setsprite Portrait StellaTalk3>>
+Do I get some of it?
+<<setsprite Portrait DimitriTalk4>>
+Yep.
+<<setsprite Portrait StellaTalk1>>
+I'm fucking IN then!
+I also know where all the other are! So I'll follow you!
+<<setsprite Portrait DimitriThumbsUp>>
+Great! Let's get going.
+<< setFollowPlayer Stella true>>
+===
+title: Help
+tags: 
+colorID: 0
+position: 912,-99
+---
+<<setsprite Portrait StellaTalk3>>
+Hey what's up?
+<<setsprite Portrait DimitriTalk3>>
+Where do I go next?
+<<setsprite Portrait StellaTalk1>>
+<<if $TommySignature is false>>
+Tommy should be a good place to start. He lives not far from here.
+<<setgoal Master Mother>>
+<<elseif $BeatriceSignature is false>>
+I played Call Of Duty and I found a random player that said they're my sister! Better go check her out! What's the worse that can happen?
+<<setgoal Master Beatrice>>
+<<elseif $BurgundySignature is false>>
+I believe Burgundy and Lucina live in an apartment together around here.
+<<setgoal Master Burgundy>>
+<<elseif $NicolasSignature is false>>
+Nicolas is one of our siblings and he lives at that house. Don't ask why I know that.
+<<setgoal Master Nicolas>>
+<<elseif $ArtemisSignature is false>>
+My infoman tells me there's a painter at this address. We should go check them out.
+<<setgoal Master Artemis>>
+<<elseif $EdwinSignature is false>>
+Edwin is over there. Less conversation, more action!
+<<setgoal Master Edwin>>
+<<elseif $EmilienSignature is false>>
+I know a guy that knows a guy that knows a guy that knows that one of our sibling works at that restaurant. Let's go there
+<<setgoal Master Emilien>>
+<<elseif $MysterySignature is false>>
+I browsed social medias and found this simp girl that lives around these parts.
+<<setgoal Master Mystery>>
+<<elseif $AndrewSignature is false>>
+Pretty sure Andrew is having a show soon. You heard me right. Andrew the singer!
+<<setgoal Master Andrew>>
+<<else>>
+[[Ending]]
+<<endif>>
+===
+title: Ending
+tags: 
+colorID: 0
+position: 1241,-40
+---
+<<setsprite Portrait StellaTalk3>>
+10... 11... 12...!
+<<setsprite Portrait StellaTalk1>>
+That's everyone!
+<<setsprite Portrait DimitriTalk2>>
+Wait really? We did it?!
+<<setsprite Portrait StellaTalk1>>
+Yes! Now we can split the money between the both of us and we're rich!
+<<setsprite Portrait DimitriScream>>
+WHAT?!
+<<setsprite Portrait DimitriTalk2>>
+Are you serious? All of that just so we keep the money for ourselves?
+<<setsprite Portrait StellaSurprise>>
+Yeah!! I want to live in a comfortable house for once!
+<<setsprite Portrait DimitriTalk1>>
+No. It's for all of our siblings. All split.
+<<setsprite Portrait StellaTalk3>>
+But I don't want to go back to the streets...
+<<setsprite Portrait DimitriTalk1>>
+Well you can come live with me...
+<<setsprite Portrait StellaTalk2>>
+...
+<<setsprite Portrait StellaTalk3>>
+Yeah... That'd be nice. Thanks
+<<setsprite Portrait DimitriTalk4>>
+Come on, it's cold out.
+-> Let's go home
+    <<setsprite Portrait StellaTalk3>>
+    Alright
+    <<endgame Master>>
+-> Wait a sec I'm not done
+    <<setsprite Portrait StellaTalk3>>
+    Just give me a minute
+===

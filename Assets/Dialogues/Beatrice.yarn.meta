@@ -1,0 +1,30 @@
+fileFormatVersion: 2
+guid: 02d390d69cd51ff459503bc05614f191
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: 
+  stringIDs:
+  - Beatrice-BeatriceFirst-0
+  - Beatrice-BeatriceFirst-1
+  - Beatrice-BeatriceFirst-2
+  - Beatrice-BeatriceFirst-3
+  - Beatrice-BeatriceFirst-4
+  - Beatrice-BeatriceFirst-5
+  - Beatrice-BeatriceFirst-6
+  - Beatrice-BeatriceFirst-7
+  - Beatrice-BeatriceFirst-8
+  - Beatrice-BeatriceNormal-9
+  - Beatrice-BeatriceNormal-10
+  - Beatrice-BeatriceNormal-11
+  - Beatrice-BeatriceNormal-12
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {instanceID: 0}
+  localizations: []

@@ -1,0 +1,31 @@
+fileFormatVersion: 2
+guid: 5370ff1f30f314749bdd16703b8e23ae
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: 
+  stringIDs:
+  - Mystery-MysteryFirst-0
+  - Mystery-MysteryFirst-1
+  - Mystery-MysteryFirst-2
+  - Mystery-MysteryFirst-3
+  - Mystery-MysteryFirst-4
+  - Mystery-MysteryFirst-5
+  - Mystery-MysteryFirst-6
+  - Mystery-MysteryFirst-7
+  - Mystery-MysteryFirst-8
+  - Mystery-MysteryFirst-9
+  - Mystery-MysteryNormal-10
+  - Mystery-MysteryNormal-11
+  - Mystery-MysteryNormal-12
+  - Mystery-MysteryNormal-13
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {instanceID: 0}
+  localizations: []

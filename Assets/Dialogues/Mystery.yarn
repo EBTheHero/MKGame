@@ -1,0 +1,52 @@
+title: Mystery
+tags: 
+colorID: 0
+position: 729,-364
+---
+<<if visited("Mystery") is false>>
+[[ MysteryFirst]]
+<<else>>
+[[ MysteryNormal]]
+<<endif>>
+===
+title: MysteryFirst
+tags: 
+colorID: 0
+position: 754,-605
+---
+<<set $MysterySignature to true>>
+<<setsprite Portrait DimitriSmile1>>
+Hello!
+<<setsprite Portrait MysteryTalk1>>
+Hello!
+<<setsprite Portrait DimitriTalk1>>
+Wanna drop your phone a bit and sign this paper for money?
+<<setsprite Portrait MysteryTalk1>>
+OK
+<<setsprite Portrait StellaTalk2>>
+Geez another easy one!
+<<setsprite Portrait DimitriSmile1>>
+It's like if God is just making it easy because he doesn't feel like writing a complex dialogue at 2 am!
+<<setsprite Portrait StellaTalk2>>
+Woah calm down. We don't want to get too meta don't we?
+<<setsprite Portrait DimitriSmile1>>
+Yes right.
+<<setsprite Portrait DimitriTalk1>>
+Goodbye... wait I don't even know her name...
+<<setsprite Portrait StellaTalk1>>
+That's gonna stay a Mystery!
+===
+title: MysteryNormal
+tags: 
+colorID: 0
+position: 1069,-584
+---
+<<setsprite Portrait MysteryTalk1>>
+*is on phone*
+<<setsprite Portrait DimitriSmile1>>
+*peeks at phone*
+<<setsprite Portrait MysteryTalk1>>
+*scoots away*
+<<setsprite Portrait DimitriTalk1>>
+Aww
+===

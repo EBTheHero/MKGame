@@ -1,0 +1,95 @@
+title: Emilien
+tags: 
+colorID: 0
+position: -482,-223
+---
+<<if visited("Emilien") is false>>
+[[ EmilienFirst]]
+<< elseif visited("Emilien") is true and $EmilienSignature is false>> 
+[[ AttemptClean]]
+<<else>>
+[[ EmilienNormal ]]
+<<endif>>
+===
+title: AttemptClean
+tags: 
+colorID: 0
+position: -383,-631
+---
+<<setsprite Portrait StellaSurprise>>
+You're still not done cleaning?!
+<<setsprite Portrait EmilienTalk2>>
+NOOOO!!! AAHH!
+<<startminigame Master Clean>>
+===
+title: CleanFailed
+tags: 
+colorID: 0
+position: -179,-365
+---
+<< setsprite Portrait EmilienTalk2>> 
+IT'S WORSE THAN BEFORE!!!
+[[Watch |AttemptClean]]
+[[Leave him be |EmilienLater]]
+===
+title: EmilienLater
+tags: 
+colorID: 0
+position: 129,-463
+---
+<<setsprite Portrait DimitriWorried>>
+We'll leave him be...
+===
+title: CleanSuccess
+tags: 
+colorID: 0
+position: -182,-101
+---
+<<set $EmilienSignature to true>>
+<<setsprite Portrait EmilienTalk1>>
+Finally done!!
+Let me change in my nice clothes.
+<<setsprite Portrait EmilienTalk3>>
+YAY!
+<<setsprite Portrait StellaTalk1>>
+Damn! Those are some nice clothes!
+<<setsprite Portrait EmilienTalk4>>
+Thanks! I made them myself! I wanna become a dancer!
+<<setsprite Portrait StellaTalk1>>
+Want some budget?! Just sign here and you will have some of dad's money!
+<<setsprite Portrait EmilienTalk3>>
+Hell yeah! This is a no brainer and isn't stolen money at all!
+<<setsprite Portrait StellaTalk1>>
+Thanks! See you soon!
+<<setsprite Portrait EmilienTalk3>>
+*dances*
+===
+title: EmilienFirst
+tags: 
+colorID: 0
+position: -722,-439
+---
+<<setsprite Portrait DimitriWorried>>
+Hey Emilien! Can we talk?
+<<setsprite Portrait EmilienTalk2>>
+CAN'T RIGHT NOW!!
+<<setsprite Portrait StellaTalk3>>
+Wow you're OK?
+<<setsprite Portrait EmilienTalk2>>
+I NEED TO CLEAN THE RESTAURANT! WE'RE CLOSING SOON!
+<<setsprite Portrait StellaSmile1>>
+I'm gonna put some funny music to fit the scene hehe
+<<startminigame Master Clean>>
+===
+title: EmilienNormal
+tags: 
+colorID: 0
+position: -753,-179
+---
+<<setsprite Portrait DimitriSmile1>>
+Hello Emilien!
+<<setsprite Portrait EmilienTalk3>>
+*dances*
+*dances some more*
+*keeps on dancing*
+===

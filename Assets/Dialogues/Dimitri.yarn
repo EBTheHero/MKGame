@@ -1,0 +1,10 @@
+title: DimitriFirst
+tags: 
+colorID: 0
+position: 443,-83
+---
+<<setsprite Portrait DimitriTalk1>>
+Welp, better get starting and go find Stella.
+She lives in a cardboard box somewhere around here.
+<<setgoal Master Stella>>
+===

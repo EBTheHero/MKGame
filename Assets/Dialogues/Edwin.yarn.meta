@@ -1,0 +1,32 @@
+fileFormatVersion: 2
+guid: 4bf9dea4887faf549b9720d0c46f4f16
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: 
+  stringIDs:
+  - Edwin-EdwinFirst-0
+  - Edwin-EdwinFirst-1
+  - Edwin-EdwinFirst-2
+  - Edwin-EdwinFirst-3
+  - Edwin-EdwinFirst-4
+  - Edwin-EdwinFirst-5
+  - Edwin-EdwinFirst-6
+  - Edwin-EdwinFirst-7
+  - Edwin-EdwinFirst-8
+  - Edwin-EdwinFirst-9
+  - Edwin-EdwinFirst-10
+  - Edwin-EdwinFirst-11
+  - Edwin-EdwinFirst-12
+  - Edwin-EdwinNormal-13
+  - Edwin-EdwinNormal-14
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {instanceID: 0}
+  localizations: []

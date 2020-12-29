@@ -1,0 +1,78 @@
+title: StampSuccess
+tags: 
+colorID: 0
+position: 1238,-518
+---
+<<set $ArtemisSignature to true>>
+<< setsprite Portrait StellaSmile1>> 
+(Easy peasy! They didn't notice)
+<< setsprite Portrait DimitriTalk3>> 
+Welp we've gonna get going Artemis! See you later!
+<< setsprite Portrait ArtemisTalk1>> 
+See you later!
+===
+title: Artemis
+tags: 
+colorID: 0
+position: 798,-636
+---
+<<if visited("Artemis") is false>>
+[[ ArtemisFirst]]
+<< elseif visited("Artemis") is true and $ArtemisSignature is false>> 
+[[ AttemptStamp]]
+<<else>>
+[[ ArtemisNormal ]]
+<<endif>>
+===
+title: StampFailed
+tags: 
+colorID: 0
+position: 1545,-516
+---
+<< setsprite Portrait StellaSurprise>>
+Erm... we've gotta go! See you soon!
+<< setsprite Portrait ArtemisTalk2>>
+???
+===
+title: ArtemisFirst
+tags: 
+colorID: 0
+position: 568,-923
+---
+<<setsprite Portrait ArtemisTalk1>>
+Hello! Welcome to my painting basement! I'm Artemis. How can I help you?
+<<setsprite Portrait DimitriTalk3>>
+Hi! We have an immoral paper signature to get you LOADS of dirty money!
+<<setsprite Portrait ArtemisTalk2>>
+No. I don't need this filthy money.
+<<setsprite Portrait DimitriTalk2>>
+Dang it! What it something I said!?
+<<setsprite Portrait ArtemisTalk2>>
+Yes. I ain't never signing it!
+<<setsprite Portrait StellaSmile1>>
+(Hey... that's a sweet signature stamp they've got! I'm gonna try to steal it and forge his signature. Gotta be sneaky though...)
+<<startminigame Master Stamp>>
+===
+title: AttemptStamp
+tags: 
+colorID: 0
+position: 917,-378
+---
+<<setsprite Portrait ArtemisTalk1>>
+Hey! Welcome back!
+<<setsprite Portrait StellaSmile1>>
+(Yes! A new opportunity to take the signature stamp!)
+<< startminigame Master Stamp>>
+===
+title: ArtemisNormal
+tags: 
+colorID: 0
+position: 646,-384
+---
+<<setsprite Portrait ArtemisTalk1>>
+Hey! Wanna take a peek at my new painting?
+<<setsprite Portrait DimitriWorried>>
+We would, but we're a bit busy... Maybe next time!
+<<setsprite Portrait ArtemisTalk1>>
+Ok!
+===

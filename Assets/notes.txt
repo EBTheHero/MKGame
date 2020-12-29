@@ -1,0 +1,25 @@
+MK
+5- Béatrice, lonely computer girl. Excort mission to an e-bar
+6-Edwin, empute cross-dresser (not signing). Phoenix Wright style argument
+7-Mustery, the simp, (chapter includes stella's story) Get off social media
+9-Nicolas, cuts himself, mothers signs, platformer you need to climb window
+
+
+
+==DONE==
+chapt 1- dimitri finds stella
+2- Tommy, fat dude, eat better. Pokemon style battle
+3-Burgundy, buys too much purses and such, they get rid of some of her stuff by sorting it. Sorting minigame
+4-Her sister, Lucina, influencer victim of the fashion industry, FPS where you go around destroying beauty ads
+8-Andrew and Donavan, besties with music, rythm game you must finish the show
+11-Émilien, waiter, Tapper style game
+12-Artemis, painter, stealth game, you need to take the stamp!
+==Yarn stuff==
+
+<<setsprite Portrait DimitriTalk1>>
+<<set $TommySignature to true>>
+<<if visited("Ship") is false>>
+<<if $should_see_ship is true and $sally_warning is false>>
+<<startminigame Master Sorting>>
+<<setgoal Master Mother>>
+<< elseif visited("Mother") is true and $TommySignature is false>> 

@@ -1,0 +1,104 @@
+title: PokemonSuccess
+tags: 
+colorID: 0
+position: 1238,-518
+---
+<<set $TommySignature to true>>
+<< setsprite Portrait MotherSmile>> 
+Thank you so much kids! Here, let me sign this for you.
+<< setsprite Portrait DimitriTalk3>> 
+No problem! It was a piece of cake!
+<< setsprite Portrait StellaSurprise>> 
+But you did nothing! I fought the burger monster!
+<< setsprite Portrait DimitriWorried>> 
+Piece of cake...!
+===
+title: Mother
+tags: 
+colorID: 0
+position: 798,-636
+---
+<<if visited("Mother") is false>>
+[[ MotherFirst]]
+<< elseif visited("Mother") is true and $TommySignature is false>> 
+[[ AttemptPokemon]]
+<<else>>
+[[ MotherNormal ]]
+<<endif>>
+===
+title: MotherFirst
+tags: 
+colorID: 0
+position: 813,-931
+---
+<<setsprite Portrait MotherSmile>> 
+Hello kids!
+<<setsprite Portrait StellaTalk2>> 
+Hi! We're here to see Tommy. We have some paper work/money for him.
+<<setsprite Portrait MotherSmile>> 
+Oh Tommy is sick, he has been eating junk food
+<<setsprite Portrait DimitriTalk1>> 
+Have you tried not feeding him junk food?
+<<setsprite Portrait MotherTalk1>> 
+I tried...
+<<setsprite Portrait StellaTalk2>> 
+And?
+<<setsprite Portrait MotherSurprise>> 
+Well there's this HUUUUUGE hamburger monster in room and I can't get rid of it!
+<<setsprite Portrait StellaSurprise>> 
+A WHAT?!?!
+<<setsprite Portrait Burger>>
+GRHUAAARRRRRGGGHHH!!!!!
+<<setsprite Portrait DimitriScream>> 
+Stella! Attack!
+<<setsprite Portrait StellaSurprise>> 
+THE HECK?!
+<<setsprite Portrait DimitriScream>> 
+STELLA! I CHOOSE YOU!!
+<<startminigame Master Pokemon>>
+===
+title: AttemptPokemon
+tags: 
+colorID: 0
+position: 1033,-931
+---
+<<setsprite Portrait MotherSurprise>> 
+Please save my son!
+<< setsprite Portrait StellaTalk1>> 
+On it!
+<< startminigame Master Pokemon>>
+===
+title: MotherNormal
+tags: 
+colorID: 0
+position: 1253,-931
+---
+<<setsprite Portrait MotherSmile>> 
+Hello kids!
+<<setsprite Portrait StellaTalk2>> 
+Hey.
+===
+title: PokemonFailed
+tags: 
+colorID: 0
+position: 1545,-516
+---
+<< setsprite Portrait DimitriWorried>> 
+Oh damn Stella! Are you ok?
+<< setsprite Portrait StellaTalk2>>
+Yeah I'm fine. That kinda hurt tho. What a stupid idea to attack a Burger Monster.
+<< setsprite Portrait DimitriThumbsUp>> 
+Well you seems OK enough to go again!
+<< setsprite Portrait MotherSurprise>> 
+Wait you want to try to fight him again?!
+[[Yeah! |AttemptPokemon]]
+[[Maybe later |MotherLater]]
+===
+title: MotherLater
+tags: 
+colorID: 0
+position: 1499,-235
+---
+<< setsprite Portrait MotherSmile>>
+See you soon then!
+===
